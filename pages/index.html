@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>眼鏡網站</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss" />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- banner section -->
+    <section class="banner flex items-center justify-end">
+      <div class="container">
+        <p class="lg-text-36 sm-text-16">Promise-Desert 2020 早春系列</p>
+        <h1 class="lg-text-64 lg-font-bold lg-mb-1 sm-text-24">
+          看得清，才能看得遠
+        </h1>
+        <button class="lg-text-20">立即購買</button>
+      </div>
+    </section>
+    <!-- slogan section -->
+    <section class="slogan">
+      <div class="container text-center">
+        <h2 class="lg-font-bold lg-text-5xl sm-text-24 sm-mb-12 lg-mb-6">
+          用專業的心，做專業的事
+        </h2>
+        <ul class="flex slogan_cards flex-wrap">
+          <!-- slogan_card 1 -->
+          <li class="slogan_card">
+            <img
+              src="../assets/images/home-section2-1.png"
+              alt=""
+              class="lg-mb-4"
+            />
+            <h3 class="lg-text-24 lg-font-bold lg-mb-2">單一價格</h3>
+            <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+          </li>
+          <!-- slogan_card 2 -->
+          <li class="slogan_card">
+            <img
+              src="../assets/images/home-section2-2.png"
+              alt=""
+              class="lg-mb-4"
+            />
+            <h3 class="lg-text-24 lg-font-bold lg-mb-2">20 分鐘即可取件</h3>
+            <p>
+              為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快
+              20 分鐘即可完成。
+            </p>
+          </li>
+          <!-- slogan_card 3 -->
+          <li class="slogan_card">
+            <img
+              src="../assets/images/home-section2-3.png"
+              alt=""
+              class="lg-mb-4"
+            />
+            <h3 class="lg-text-24 lg-font-bold lg-mb-2">安心售後服務</h3>
+            <p>
+              我們提供長達 120
+              天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。
+            </p>
+          </li>
+          <!-- slogan_card 4 -->
+          <li class="slogan_card">
+            <img
+              src="../assets/images/home-sectioin2-4.png"
+              alt=""
+              class="lg-mb-4"
+            />
+            <h3 class="lg-text-24 lg-font-bold lg-mb-2">關於鏡片</h3>
+            <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- classic section  -->
+    <section class="classic">
+      <div class="container text-center">
+        <h2 class="lg-font-bold lg-text-5xl lg-mb-12 sm-text-24 sm-mb-12">
+          經典系列鏡框
+        </h2>
+        <ul class="flex classic_cards flex-wrap">
+          <!-- classic_card 1 -->
+          <li class="classic_card">
+            <img src="../assets/images/home-section3-1.png" alt="" />
+            <h3 class="lg-text-5xl lg-font-black italic">OPTICAL</h3>
+          </li>
+          <!-- classic_card 2 -->
+          <li class="classic_card">
+            <img src="../assets/images/home-section3-2.png" alt="" />
+            <h3 class="lg-text-5xl lg-font-black italic">SUNGLASSES</h3>
+          </li>
+          <!-- classic_card 3 -->
+          <li class="classic_card">
+            <img src="../assets/images/home-section3-3.png" alt="" />
+            <h3 class="lg-text-5xl lg-font-black italic">FUNCTIONAL</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- design_glasses section -->
+    <section class="design_glasses">
+      <div class="container">
+        <h2 class="lg-text-5xl lg-font-bold lg-mb-12 sm-text-24 sm-mb-12">
+          聯名設計鏡框
+        </h2>
+        <ul class="flex">
+          <li>
+            <div class="img_container img1"></div>
+            <h3
+              class="lg-text-5xl lg-font-black italic design_glasses_card double_a"
+            >
+              DOUBLE A+
+            </h3>
+          </li>
+          <li>
+            <div class="img_container img2"></div>
+            <h3
+              class="lg-text-5xl lg-font-black italic design_glasses_card youth"
+            >
+              YOUTH
+            </h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- recommend section -->
+    <section class="recommend">
+      <div class="container">
+        <h2
+          class="recommend_title lg-font-bold lg-text-5xl sm-text-24 sm-mb-12 text-center lg-mb-12 sm-text-24"
+        >
+          顧客推薦
+        </h2>
+        <ul class="flex flex-wrap recommend_cards">
+          <!-- recommend_card 1 -->
+          <li class="recommend_card">
+            <img src="../assets/images/home-section5-1.png" alt="" />
+            <div class="recommend_text">
+              <p class="lg-text-16 lg-mb-2">Jessy</p>
+              <p class="lg-text-16 lg-mb-18">
+                眼鏡品質優良，下次還會想來這邊購買！
+              </p>
+              <p class="lg-text-14 recommend_date">2021/06/20</p>
+            </div>
+          </li>
+          <!-- recommend_card 2 -->
+          <li class="recommend_card">
+            <img src="../assets/images/home-section5-2.png" alt="" />
+            <div class="recommend_text">
+              <p class="lg-text-16 lg-mb-2">凱倫</p>
+              <p class="lg-text-16 lg-mb-18">
+                做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
+              </p>
+              <p class="lg-text-14 recommend_date">2021/04/18</p>
+            </div>
+          </li>
+          <!-- recommend_card 3 -->
+          <li class="recommend_card">
+            <img src="../assets/images/home-section5-3.png" alt="" />
+            <div class="recommend_text">
+              <p class="lg-text-16 lg-mb-2">悠悠</p>
+              <p class="lg-text-16 lg-mb-18">
+                謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
+              </p>
+              <p class="lg-text-14 recommend_date">2020/12/25</p>
+            </div>
+          </li>
+          <!-- recommend_card 4 -->
+          <li class="recommend_card">
+            <img src="../assets/images/home-section5-4.png" alt="" />
+            <div class="recommend_text">
+              <p class="lg-text-16 lg-mb-2">Kyuan</p>
+              <p class="lg-text-16 lg-mb-18">
+                服務很好，品質沒有任何問題，非常喜歡。
+              </p>
+              <p class="lg-text-14 recommend_date">2020/10/31</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- contact section -->
+    <section class="homepage_contact">
+      <div class="container">
+        <div class="contact_container">
+          <h2
+            class="recommend_title lg-font-bold lg-text-5xl sm-text-24 sm-mb-12 text-center lg-mb-12 sm-text-24"
+          >
+            聯絡我們
+          </h2>
+          <p class="lg-text-20 lg-mb-6 sm-text-16">
+            我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
+          </p>
+          <!-- action 屬性指定當用戶提交表單時，數據應該被發送到的 URL（即表單提交的目標地址）。 -->
+          <!-- name="name" 指定這個輸入框的名稱。當表單被提交時，該輸入框的值會以 name 為鍵提交到服務器。 -->
+          <form action="#" method="post" class="flex flex-col">
+            <label for="name" class="lg-text-16 lg-mb-2">姓名</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="陳小明"
+              required
+              class="lg-text-16 lg-p-3"
+            />
+            <label for="name" class="lg-text-16 lg-mb-2">聯絡電話</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="0912-345-678"
+              required
+              class="lg-text-16 lg-p-3"
+            />
+            <label for="name" class="lg-text-16 lg-mb-2">電子郵件</label>
+            <input
+              type="text"
+              id="mail"
+              name="mail"
+              placeholder="example@email.com"
+              required
+              class="lg-text-16 lg-p-3"
+            />
+            <label for="name" class="lg-text-16 lg-mb-2">意見反應</label>
+            <input
+              type="text"
+              id="opinion"
+              name="opinion"
+              placeholder="請輸入您的意見"
+              required
+              class="lg-text-16 lg-p-3 opinion"
+            />
+            <div class="flex items-center lg-mb-12">
+              <input
+                type="checkbox"
+                id="privacy_policy"
+                name="privacy_policy"
+                required
+              />
+              <label for="privacy_policy" class="lg-text-16">
+                我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
+              </label>
+            </div>
+            <button type="submit" class="submit lg-text-16">確認送出</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+    <!-- banner可以設高度 -->
+
+    <!-- 增加for和id 增加用戶點擊範圍 -->
+    <!-- <label for="name">姓名</label>
+    <input type="text" id="name" placeholder="小明" /> -->
+    <!-- 引入jQuery -->
+  </body>
+</html>

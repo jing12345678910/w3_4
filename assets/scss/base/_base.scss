@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  /* outline: 1px solid blue; */
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline-block;
+}
+a:hover {
+  color: #650300;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+body {
+  line-height: 1.5;
+  font-family: "Noto Sans TC", "Roboto", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+}
+.container,
+.header_container,
+.footer_container {
+  /* 寫max-width而不是width 內容才能根據寬度做變化 */
+  max-width: 1296px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .container,
+  .header_container,
+  .footer_container {
+    /* 寫max-width而不是width 內容才能根據寬度做變化 */
+    max-width: 696px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .container,
+  .header_container {
+    width: 100%;
+    align-items: flex-start;
+  }
+}
+img {
+  /* 設定max-width而不是width 避免圖片撐到太寬模糊 */
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background-position: center;
+}

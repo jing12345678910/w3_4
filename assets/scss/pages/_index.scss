@@ -1,0 +1,277 @@
+/* banner section */
+.banner {
+  background-image: url(../images/home-header.png);
+  color: #650300;
+  background-repeat: no-repeat;
+  background-size: cover; /* 圖片盡量填滿容器 */
+  background-position: center;
+  height: 787px;
+}
+.banner .container {
+  text-align: end;
+  width: 1296px;
+}
+.banner button {
+  color: #ffffff;
+  // background-color: var(--primary);
+  background-color: $primary;
+  padding: 6px 12px;
+}
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(../images/home-header-sm.png);
+  }
+}
+@media (max-width: 576px) {
+  .banner .container {
+    width: 348px;
+    margin: 0 auto;
+  }
+}
+/* slogan section */
+.slogan {
+  padding: 80px 0;
+  background-color: #fbf2f2;
+  color: #650300;
+}
+.slogan_cards {
+  gap: 24px;
+}
+.slogan_card {
+  /* 有3個空隙(24px*3=72px) 要分配給4個項目 */
+  width: calc((25% - 24px * 3 / 4));
+}
+.slogan_card img {
+  width: 100px;
+}
+.slogan_card p {
+  color: black;
+  text-align: start;
+}
+@media (max-width: 992px) {
+  .slogan_card {
+    /* 有1個空隙(24px*1=24px) 要分配給2個項目 */
+    width: calc((50% - 24px * 1 / 2));
+  }
+}
+@media (max-width: 576px) {
+  .slogan {
+    padding: 40px 0;
+  }
+  .slogan .container {
+    width: 348px;
+  }
+  .slogan_card {
+    width: 100%;
+  }
+}
+/* classic section */
+.classic {
+  padding: 80px 0;
+  color: #650300;
+}
+.classic_cards {
+  gap: 24px;
+  justify-content: center;
+}
+.classic_card img {
+  max-width: 416px;
+}
+@media (max-width: 992px) {
+  .classic_card {
+    width: 100%;
+  }
+  .classic_card img {
+    max-width: 336px;
+  }
+}
+@media (max-width: 576px) {
+  .classic {
+    padding: 40px 0;
+  }
+  .classic_card img {
+    max-width: 348px;
+  }
+}
+/* design_glasses section */
+.design_glasses {
+  background-image: url(../images/index-bg.png);
+  max-height: 608px;
+  background-size: contain; /* 保持圖片寬高比 */
+  background-repeat: no-repeat;
+  background-size: cover; /* 確保背景圖片填滿容器寬度 */
+  /* background-position: center; 居中顯示背景圖片 */
+}
+.design_glasses .container {
+  padding: 80px 0;
+}
+.design_glasses h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.design_glasses ul li {
+  width: 50%;
+}
+.design_glasses ul li h3 {
+  // color: var(--primary);
+  color: $primary;
+  background-color: #ffffff;
+
+  white-space: nowrap;
+}
+.double_a {
+  padding: 8px 201px;
+}
+.youth {
+  padding: 8px 246px;
+}
+.design_glasses_card {
+  border: 1px solid #ced4da;
+}
+.img1,
+.img2 {
+  height: 240px;
+  background-size: contain; /* 保持圖片寬高比 */
+  background-repeat: no-repeat;
+  background-size: cover; /* 確保背景圖片填滿容器寬度 */
+  background-position: center; /* 居中顯示背景圖片 */
+}
+.img1 {
+  background-image: url(../images/home-section4-1.png);
+}
+.img2 {
+  background-image: url(../images/home-section4-2.png);
+}
+@media (max-width: 992px) {
+  .design_glasses {
+    background-image: url(../images/index-bg-md.png);
+    max-height: 960px;
+    background-size: cover; /* 背景圖像填滿容器 */
+    background-repeat: no-repeat; /* 防止圖像重複 */
+    /* background-position: center; 將圖像居中 */
+  }
+  .design_glasses ul {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .design_glasses ul li {
+    width: 100%;
+  }
+  .img_container {
+    max-height: 240px;
+    overflow: hidden;
+  }
+  .img_container img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 576px) {
+  .design_glasses .container {
+    padding: 40px 0;
+    max-width: 348px;
+  }
+  .img1 {
+    background-image: url(../images/home-section4-1-sm.png);
+  }
+  .img2 {
+    background-image: url(../images/home-section4-2-sm.png);
+  }
+  .double_a {
+    padding: 8px 50px;
+  }
+  .youth {
+    padding: 8px 95px;
+  }
+}
+/* recommend section */
+.recommend .container {
+  padding: 80px 0;
+}
+.recommend_title {
+  color: #650300;
+}
+.recommend_cards {
+  gap: 24px;
+}
+.recommend_card {
+  /* 有3個空隙(24px*3=72px) 要分配給4個項目 */
+  width: calc((25% - 24px * 3 / 4));
+  border-radius: 4px;
+  border: #dee2e6 1px solid;
+  box-shadow: 0px 2px 6px #00000029; /* X:0px; Y:2px; 模糊:6px */
+}
+.recommend_text {
+  padding: 16px;
+}
+.recommend_date {
+  color: #707070;
+}
+@media (max-width: 992px) {
+  .recommend_card {
+    /* 有1個空隙(24px) 要分配給2個項目 */
+    width: calc((50% - 24px * 1 / 2));
+  }
+}
+@media (max-width: 576px) {
+  .recommend .container {
+    padding: 40px 0;
+    max-width: 348px;
+  }
+  .recommend_cards {
+    gap: 16px;
+  }
+  .recommend_card {
+    width: 100%;
+  }
+}
+/* contact section */
+.homepage_contact {
+  background-color: #fbf2f2;
+}
+.contact_container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+.homepage_contact input {
+  border: 1px solid #000000;
+  margin-bottom: 22px;
+}
+.opinion {
+  padding-bottom: 106px;
+}
+input[type="checkbox"] {
+  margin: auto 0;
+  border: 1px solid #000000;
+  margin-right: 4px;
+  width: 24px;
+  height: 24px;
+}
+.submit {
+  // background-color: var(--primary);
+  background-color: $primary;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 16px 176px;
+}
+.submit:hover {
+  background-color: #650300;
+}
+@media (max-width: 992px) {
+  .contact_container {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .contact_container {
+    padding: 40px 0;
+    max-width: 348px;
+  }
+  input[type="checkbox"] {
+    margin-top: 0;
+  }
+  .submit {
+    padding: 16px 142px;
+  }
+}

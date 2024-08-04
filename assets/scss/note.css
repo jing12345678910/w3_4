@@ -1,0 +1,93 @@
+img {
+  /* 設定max-width而不是width 避免圖片撐到太寬模糊 */
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  background-position: center;
+}
+.container {
+  /* 寫max-width而不是width 內容才能根據寬度做變化 */
+  /* 為了把padding左右的擠壓補回去 所以+24px */
+  max-width: calc(1296px+24px);
+  margin: 0 auto;
+  /* 間隔寬度24px/2 */
+  padding: 0 12px;
+}
+.w-50{
+  width: 50%;
+}
+/* 平板尺寸變成滿版 */
+@media (max-width: 992px) {
+  .w-md-100 {
+    width: 100%;
+  }}
+/* nav用padding推 增加用戶點擊範圍 */
+/* nav{
+
+} */
+.banner {
+  /* 減導覽列 */
+  height: calc(100vh-80px);
+}
+.feature_list {
+  display: flex;
+  justify-content: space-between;
+}
+.feature_list .card {
+  /* 雖然上層flex會分配底下項目的空間 但還是自己設定width"%"比較好 */
+  /* 有3個空隙(24px*3=72px) 要分配給4個項目 */
+  width: calc((25% - 24px * 3 / 4));
+}
+/* 平板 */
+@media (max-width: 992px) {
+  .container {
+    /* 設計稿:(12欄*36px)+(11個空隙*24px)+(左右padding各推12px) */
+    max-width: 720px;
+  }
+  .container_md_fluid {
+    /* 維持和電腦版相同 給header和footer用 維持空間足夠 不會跑版*/
+    max-width: calc(1296px+24px);
+  }
+  .feature_list {
+    /* flex預設不會換行 */
+    flex-wrap: wrap;
+  }
+  .feature_list .card {
+    /* 雖然上層flex會分配底下項目的空間 但還是自己設定width"%"比較好 */
+    /* 有1個空隙(24p) 要分配給2個項目 */
+    width: calc(50%-24px * 1 / 2);
+  }
+}
+/* 手機 */
+@media (max-width: 576px) {
+  .container {
+    max-width: 372px;
+  }
+  .feature_list .card {
+    width: 100%;
+  }
+}
+
+/* 格線系統 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+/* 12欄裡佔了3欄 是4等份 */
+.col-3 {
+  width: calc(100% / 4);
+  padding: 0 12px;
+}
+@media (max-width: 992px) {
+  /* 12欄裡佔了6欄 是2等份 */
+  .col-md-6 {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 576px) {
+  /* 4欄裡佔了4欄 是1等份 */
+  .col-sm-12 {
+    width: 100%;
+  }
+}

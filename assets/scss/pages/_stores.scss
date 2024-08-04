@@ -1,0 +1,76 @@
+.dropdown {
+  /* 12欄裡佔了3欄 是4等份 */
+  width: calc(100% / 4);
+  color: #495057;
+  opacity: 75%;
+  padding: 6px;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+}
+.store_title {
+  border-left: 8px solid #9f1213;
+}
+.option_container {
+  margin-bottom: 41px;
+}
+.option {
+  font-size: 24px;
+  margin-right: 16px;
+}
+.store_cards {
+  margin-bottom: 32px;
+  gap: 24px;
+}
+.store_card {
+  /* 12欄裡佔了4欄 是3等份 */
+  /* 有2個空隙(24p) 要分配給3個項目 */
+  width: calc(100% / 3 - 24px * 2 / 3);
+  margin-bottom: 48px;
+  border: 1px solid #00000020;
+}
+.store_card a{
+  display: block;
+}
+.store_name {
+  font-size: 24px;
+  padding: 8px 24px;
+  border: 1px solid #00000020;
+}
+.store_contacts {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.store_contact {
+  font-size: 20px;
+  margin-left: 12px;
+  margin-bottom: 8px;
+}
+.store_card .info {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+}
+@media (max-width: 992px) {
+  .store_card {
+    /* 12欄裡佔了6欄 是2等份 */
+    /* 有1個空隙(24p) 要分配給2個項目 */
+    width: calc(100% / 2 - 24px * 1 / 2);
+  }
+}
+@media (max-width: 576px) {
+  .dropdown {
+    flex-grow: 1;
+  }
+  .stores {
+    width: 348px;
+    margin: 0 auto;
+  }
+  .store_card {
+    width: 100%;
+  }
+}
