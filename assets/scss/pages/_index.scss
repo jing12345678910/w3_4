@@ -100,7 +100,7 @@
   background-size: contain; /* 保持圖片寬高比 */
   background-repeat: no-repeat;
   background-size: cover; /* 確保背景圖片填滿容器寬度 */
-  /* background-position: center; 居中顯示背景圖片 */
+  background-position: center; /* 居中顯示背景圖片 */
 }
 .design_glasses .container {
   padding: 80px 0;
@@ -242,11 +242,33 @@
   padding-bottom: 106px;
 }
 input[type="checkbox"] {
+  /* 隱藏瀏覽器預設的勾選框樣式*/
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  position: relative;/* 用來給✔定位 */
+  background-color: transparent;
   margin: auto 0;
   border: 1px solid #000000;
   margin-right: 4px;
   width: 24px;
   height: 24px;
+}
+/*隱藏瀏覽器預設的勾選框樣式，自訂樣式*/
+input[type="checkbox"]:checked::before {
+  content: "✔";
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px; /* 勾選符號大小 */
+}
+.homepage_contact input[type="text"],
+.homepage_contact input[type="tel"],
+.homepage_contact input[type="email"] {
+  background-color: transparent;
 }
 .submit {
   // background-color: var(--primary);
